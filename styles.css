@@ -65,15 +65,17 @@ header {
     max-width: 750px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
     margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.2s ease;
 }
 
-.caja-interna a {
-    text-decoration: none;
-    color: inherit;
+.caja-interna:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.10);
 }
 
 a {
@@ -81,15 +83,15 @@ a {
     color: inherit; 
 }
 
-a:hover {
-    color: #000000;
-}
-
 footer {
     position: absolute;
     bottom: 0;
     align-items: center;
     padding-bottom: 50px;
+}
+
+footer a {
+    transition: background-color 0.2s ease;
 }
 
 footer a:hover {
