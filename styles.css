@@ -60,7 +60,7 @@ header {
     margin: 0 auto;
 }
 
-.caja-interna {
+.caja-interna{
     position: relative;
     width: 90%;
     max-width: 750px;
@@ -72,6 +72,8 @@ header {
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s ease, height 0.6s ease;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4), -6px -6px 6px rgba(255, 255, 255, 0.3);
+    
 }
 
 .caja-interna::after {
@@ -97,9 +99,24 @@ header {
     height: 422px;
 }
 
-.caja-interna[data-imagen="fortisland1.1.2E.png"]::after {
-    background-image: url('fortisland1.1.2E.png');
+.xmas-fuera {
+    position: relative;
+    width: 90%;
+    max-width: 750px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, height 0.6s ease;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.3), inset -6px -6px 6px rgba(255, 255, 255, 0.25);
 }
+
+/*.caja-interna[data-imagen="fortisland1.1.2E.png"]::after {
+    background-image: url('fortisland1.1.2E.png');
+}*/
 
 .caja-interna[data-imagen="fortisland1.1.2.png"]::after {
     background-image: url('fortisland1.1.2.png');
@@ -114,6 +131,9 @@ a {
     color: inherit; 
 }
 
+.back {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8), -4px -4px 4px rgba(255, 255, 255, 0.6);
+}
 
 footer {
     position: absolute;
